@@ -17,13 +17,12 @@ myButton.onclick = () => {
 };
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
+  let myName = prompt("Please enter your name.");
   if (!myName) {
     myName = "Stranger"
   }
 
   localStorage.setItem("name", myName);
-  myHeading.textContent = `Welcome, ${myName}`;
-  
+  myHeading.textContent = `Welcome, ${myName}`;  
 }
 
