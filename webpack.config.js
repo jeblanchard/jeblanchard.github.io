@@ -1,7 +1,12 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
+
 
 module.exports = {
     mode: 'production',
+    optimization: {
+        minimizer: [new TerserPlugin({ /* additional options here */ })],
+    },
     entry: {
         home: './src/homePage.js',
         animations: './src/components/LikeButton.js',
