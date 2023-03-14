@@ -9,7 +9,6 @@ module.exports = {
     },
     entry: {
         home: './src/homePage.js',
-        animations: './src/components/LikeButton.js',
     },
     output: {
         filename: '[name].bundle.js',
