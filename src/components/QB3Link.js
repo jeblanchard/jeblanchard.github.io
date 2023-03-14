@@ -9,7 +9,7 @@ export default function QB3Link() {
         >
             <img
                 className="qb3-img"
-                src="./images/qb3.jpeg"
+                src="./src/images/qb3.jpeg"
                 alt="UC Berkeley QB3"
             />
         </a>

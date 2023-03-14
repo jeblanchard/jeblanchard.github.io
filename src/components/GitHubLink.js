@@ -9,7 +9,7 @@ export default function GitHubLink() {
         >
             <img
                 className="github-img"
-                src="./images/github-logo.svg"
+                src="./src/images/github-logo.svg"
                 alt="GitHub Profile"
             />
         </a>

@@ -9,7 +9,7 @@ export default function LinkedInLink() {
         >
             <img
                 className="linked-in-img"
-                src="./images/linkedin_icon.svg"
+                src="./src/images/linkedin_icon.svg"
                 alt="LinkedIn Profile"
             />
         </a>
