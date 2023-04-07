@@ -7,3 +7,12 @@ import HomePage from "./components/HomePage";
 const domNode = document.getElementById("react-root");
 const root = createRoot(domNode);
 root.render(<HomePage/>);
+
+const saveSiteVisitRequest = new Request("http://35.224.79.16");
+fetch(saveSiteVisitRequest).then((response) => {
+    if (!response.ok) {
+        console.debug("Successfully saved site visit.")
+    } else {
+        console.debug("Could not save site visit.")
+    }
+})
