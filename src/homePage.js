@@ -13,6 +13,6 @@ fetch(saveSiteVisitRequest).then((response) => {
     if (!response.ok) {
         console.debug("Successfully saved site visit.")
     } else {
-        console.debug("Could not save site visit.")
+        console.debug(`Could not save site visit.\n${response.statusCode}`)
     }
 })
