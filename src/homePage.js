@@ -8,7 +8,7 @@ const domNode = document.getElementById("react-root");
 const root = createRoot(domNode);
 root.render(<HomePage/>);
 
-const saveSiteVisitRequest = new Request("http://35.224.79.16");
+const saveSiteVisitRequest = new Request("https://analytics.jeblanchard.dev");
 fetch(saveSiteVisitRequest).then((response) => {
     if (!response.ok) {
         console.debug("Successfully saved site visit.")
