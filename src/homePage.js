@@ -8,7 +8,6 @@ const domNode = document.getElementById("react-root");
 const root = createRoot(domNode);
 root.render(<HomePage/>);
 
-const saveSiteVisitRequest = new Request("https://analytics.jeblanchard.dev");
-
+const saveSiteVisitRequest = new Request("https://analytics.jeblanchard.dev", {method: 'POST'});
 function doNothingWithResponse(response) {}
 fetch(saveSiteVisitRequest).then(doNothingWithResponse)
