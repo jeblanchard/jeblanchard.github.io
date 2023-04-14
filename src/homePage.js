@@ -9,12 +9,6 @@ const root = createRoot(domNode);
 root.render(<HomePage/>);
 
 const saveSiteVisitRequest = new Request("https://analytics.jeblanchard.dev");
-fetch(saveSiteVisitRequest).then((response) => {
-    console.debug(response)
-    if (response.ok) {
-        console.debug("Successfully saved site visit.")
-    } else {
-        console.debug(`Could not save site visit.\n${response.statusMessage}`)
-    }
-})
 
+function doNothingWithResponse(response) {}
+fetch(saveSiteVisitRequest).then(doNothingWithResponse)
